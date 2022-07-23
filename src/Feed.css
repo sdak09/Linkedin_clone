@@ -1,0 +1,31 @@
+.Feed {
+    padding: 10px  10px;
+    
+    background-color: white;
+    height: 100%;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.Feed__input {
+    border: 1px solid lightgray;
+    border-radius: 40px;
+    display:flex;
+    padding: 10px;
+    color: gray;
+    width: 22em;
+
+}
+
+.Feed__input > form {
+    display: flex;
+    width: 100%;
+}
+
+.Feed__input > form > input {
+    border: none;
+    flex: 1;
+    font-weight: 600;
+}
+
+
