@@ -1,19 +1,18 @@
 .Feed {
     padding: 10px  10px;
-    
     background-color: white;
-    height: 100%;
+    height: fit-content;
     margin: 10px;
     border-radius: 8px;
 }
 
 .Feed__input {
-    border: 1px solid lightgray;
+    border: 2px solid lightgray;
     border-radius: 40px;
     display:flex;
     padding: 10px;
     color: gray;
-    width: 22em;
+    width: 25em;
 
 }
 
@@ -26,6 +25,15 @@
     border: none;
     flex: 1;
     font-weight: 600;
+}
+
+.Feed__input > form > button {
+    display: none;
+}
+
+.Feed__inputOption {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 
