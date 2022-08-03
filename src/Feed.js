@@ -12,7 +12,6 @@ import { getDocs, colRef } from "./firebase";
 
 function Feed() {
   const [input, setInput] = useState(" ");
-  const [posts, setPosts] = useState([]);
   const [allPosts, setAllPosts] = useState([]);
 
   // useEffect(() => {
@@ -104,19 +103,18 @@ function Feed() {
           />
         </div>
       </div>
-      {posts.map(({ id, data: { name, description, message, photoUrl } }) => {
+      {/* {posts.map(({ id, data: { name, description, message, photoUrl } }) => {
         <Post
           keys={id}
           name={name}
           description={description}
           photoUrl={photoUrl}
         />;
+
+      })} */}
+      {allPosts.map((data) => {
+        return <Post key={data._id} message={data?.post} />;
       })}
-      <Post
-        name="Dakshita Sharma"
-        description="nsfjsdgdf"
-        message="mskgdgfdkg"
-      />
     </div>
   );
 }

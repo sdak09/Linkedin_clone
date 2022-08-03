@@ -21,7 +21,7 @@ function Post({ name , description , message , photoUrl}) {
         </div>
 
             <div className='post__body'>
-                <p> Message goes here</p> 
+                <p> {message}</p> 
             </div>
 
         <div className='post__button'>
