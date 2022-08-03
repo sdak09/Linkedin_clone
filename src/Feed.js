@@ -112,7 +112,7 @@ function Feed() {
         />;
 
       })} */}
-      {allPosts.map((data) => {
+      {allPosts?.map((data) => {
         return <Post key={data._id} message={data?.post} />;
       })}
     </div>
